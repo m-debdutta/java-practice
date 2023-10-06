@@ -1,4 +1,6 @@
-enum PokemonType {
+package pokemon.enums;
+
+public enum PokemonType {
   WATER,
   FIRE,
   GRASS,

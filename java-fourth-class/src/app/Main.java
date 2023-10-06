@@ -1,3 +1,5 @@
+import app.files.Human;
+
 class Main {
   public static void main(String[] args) {
     Human bittu = new Human("Bittu", 19);

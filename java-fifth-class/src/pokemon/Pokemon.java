@@ -1,21 +1,26 @@
-abstract class Pokemon {
+package pokemon;
+import pokemon.enums.PokemonType;
+
+public class Pokemon{
   private int hp;
+  private int level;
   private int attackPower;
   private final String name;
   private final PokemonType type;
 
-  Pokemon(String name, PokemonType type, int hp, int attackPower) {
+  public Pokemon(String name, PokemonType type, int hp, int attackPower) {
     this.hp = hp;
+    this.level = 0;
     this.type = type;
     this.name = name;
     this.attackPower = attackPower;
   }
 
-  void takeDamage(int damage) {
+  public void takeDamage(int damage) {
     this.hp -= damage;
   }
 
-  void attack(Pokemon opponent) {
+  public void attack(Pokemon opponent) {
     opponent.takeDamage(10);
   }
 
